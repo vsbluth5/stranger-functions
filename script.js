@@ -11,6 +11,9 @@ const textbox = document.querySelector("#userInput");
 const pictureBox = document.querySelector("#pictureBox");
 // console.log(pictureBox);
 
+const messageLbl = document.querySelector("#message")
+console.log(messageLbl)
+
 // The value property
 textbox.addEventListener("change", e => {
   console.log("Input changed!");
@@ -25,9 +28,13 @@ textbox.addEventListener("change", e => {
   } else {
     console.log("No match...");
   }
+  clearBox()
 });
 
 // Write a function that clears the textbox after each guess
+const clearInput = ()=> {
+  textbox.value = ""
+}
 
 
 // Let's write a function that checks if the answer has already been given
