@@ -17,12 +17,11 @@ console.log(messageLbl)
 
 // Write a function that clears the textbox after each guess
 const clearInput = ()=> {
-  textbox.value = ""
+  
 }
 
 // Write a function that keeps track of the number that are
 // correct and writes messages to the screen
-let count = 0
 const giveEncouragement =() => {
   
 }
