@@ -14,7 +14,6 @@ const pictureBox = document.querySelector("#pictureBox");
 const messageLbl = document.querySelector("#message")
 console.log(messageLbl)
 
-
 // Write a function that clears the textbox after each guess
 const clearInput = ()=> {
   
@@ -30,21 +29,24 @@ const changeMessage =() => {
 // let timeout = setTimeout(()=> {
 //messageLbl.innerHTML = ``
 // }, 10000)
-
-// The value property
-textbox.addEventListener("change", e => {
-  console.log("Input changed!");
+textbox.addEventListener("input", e => {
+  // console.log("Input changed!");
 
   // How do we test to see if have a certain value?
-  if (textbox.value === "Eleven") {
+  if (textbox.value == "Eleven") {
     console.log("YOU GOT ELEVEN!");
       pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.11%20AM.png?v=1565269664594"/>`;
-  } else if (textbox.value === "Dustin") {
+  } else if (textbox.value == "Dustin") {
     console.log("YOU GOT DUSTIN!");
     pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.21%20AM.png?v=1565269664037" />`;
-  } else {
+  } else if (textbox.value == "") {
+    console.log("YOU GOT DUSTIN!");
+    pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.27%20AM.png?v=1565269664169" />`;
     messageLbl.innerHTML = `Not a match...`
+  } else {
+    console.log("That's not a match...")
   }
-  clearInput()
+  // clearInput here
+  // changeMessage here
 });
 
