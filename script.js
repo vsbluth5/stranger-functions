@@ -16,7 +16,7 @@ console.log(messageLbl)
 
 // Write a function that clears the textbox after each guess
 const clearInput = ()=> {
-  
+  textbox.value = ""
 }
 
 // Write a function that keeps track of the number that are
@@ -44,9 +44,10 @@ textbox.addEventListener("input", e => {
     pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.27%20AM.png?v=1565269664169" />`;
     messageLbl.innerHTML = `Not a match...`
   } else {
-    console.log("That's not a match...")
+    messageLbl.innerHTML = `That's not a match...`
   }
   // clearInput here
+  clearInput()
   // changeMessage here
 });
 
