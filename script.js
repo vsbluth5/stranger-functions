@@ -20,15 +20,22 @@ const clearInput = ()=> {
   textbox.value = ""
 }
 
-// Let's write a function that checks if the answer has already been given
-
-
 // Write a function that keeps track of the number that are
+// correct and writes messages to the screen
+let count = 0
+const giveEncouragement =() => {
+  
+}
+
+// Let's write a function that checks if the answer has already been given
+const notSeenYet = (answer)=>{
+  
+}
 
 // Set a timeout
-let timeout = setTimeout(()=> {
-  alert("Hello")
-})
+// let timeout = setTimeout(()=> {
+//   alert("Hello")
+// }, 10000)
 
 // The value property
 textbox.addEventListener("change", e => {
