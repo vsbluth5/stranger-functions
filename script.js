@@ -39,8 +39,8 @@ textbox.addEventListener("input", e => {
   } else if (textbox.value == "Dustin") {
     console.log("YOU GOT DUSTIN!");
     pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.21%20AM.png?v=1565269664037" />`;
-  } else if (textbox.value == "") {
-    console.log("YOU GOT DUSTIN!");
+  } else if (textbox.value == "Joyce") {
+    console.log("YOU GOT JOYCE!");
     pictureBox.innerHTML += `<img src="https://cdn.glitch.com/01b27d37-a07e-4e2e-8caf-659256274937%2FScreen%20Shot%202019-08-08%20at%208.39.27%20AM.png?v=1565269664169" />`;
     messageLbl.innerHTML = `Not a match...`
   } else {
