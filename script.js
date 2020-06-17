@@ -14,6 +14,22 @@ const pictureBox = document.querySelector("#pictureBox");
 const messageLbl = document.querySelector("#message")
 console.log(messageLbl)
 
+
+// Write a function that clears the textbox after each guess
+const clearInput = ()=> {
+  textbox.value = ""
+}
+
+// Let's write a function that checks if the answer has already been given
+
+
+// Write a function that keeps track of the number that are
+
+// Set a timeout
+let timeout = setTimeout(()=> {
+  alert("Hello")
+})
+
 // The value property
 textbox.addEventListener("change", e => {
   console.log("Input changed!");
@@ -28,16 +44,6 @@ textbox.addEventListener("change", e => {
   } else {
     console.log("No match...");
   }
-  clearBox()
+  clearInput()
 });
 
-// Write a function that clears the textbox after each guess
-const clearInput = ()=> {
-  textbox.value = ""
-}
-
-
-// Let's write a function that checks if the answer has already been given
-
-
-// Write a function that keeps track of the number that are
